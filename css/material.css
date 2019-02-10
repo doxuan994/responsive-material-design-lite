@@ -6,31 +6,12 @@ ul {
     list-style: none;
 }
 
-.mdl-grid {
-    /* background: slateblue; */
-}
-.mdl-cell {
-    /* background-color: gold; */
-    /* padding: 15px; */
-}
-
-
-/* .demo-layout-transparent {
-background: url('../img/pexels-photo-1070945.jpeg') center / cover;
-} */
 .demo-layout-transparent .mdl-layout__drawer-button {
-    /* This background is dark, so we set text to white. Use 87% black instead if
-    your background is light. */
     color: white;
-}
-
-.demo-card-wide.mdl-card {
-
 }
 
 #banner {
     padding: 3rem 0;
-    /* background: url("../img/ninja.svg"), linear-gradient(45deg,#dd3d31 0%,#d22f23 100%); */
     background: #eee;
     background-size: cover;
 }
@@ -80,7 +61,6 @@ background: url('../img/pexels-photo-1070945.jpeg') center / cover;
 .mdl-progress {
     margin-top: 15px;
 }
-
 
 /* Responsive table */
 .mdl-data-table {
