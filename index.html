@@ -99,36 +99,58 @@
 
             <div>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--8-col">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--12-col-tablet">
                         <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--6-col"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
-                            <div class="mdl-cell mdl-cell--6-col"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
                         </div>
                         <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--6-col"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
-                            <div class="mdl-cell mdl-cell--6-col"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
                         </div>
                         <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--6-col"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
-                            <div class="mdl-cell mdl-cell--6-col"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"><img src="img/pexels-photo-1070945.jpeg" alt=""></div>
                         </div>
                         <!-- Accent-colored raised button with ripple -->
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                             Button
                         </button>
                     </div>
-                    <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
                         <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--12-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
                                 <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
                                 <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
                                     <div class="mdl-snackbar__text"></div>
                                     <button class="mdl-snackbar__action" type="button"></button>
                                 </div>
 
-                            </div>
-                            <div class="mdl-cell mdl-cell--12-col">
+                                <button type="button" class="mdl-button show-modal">Show Modal</button>
+                                <dialog class="mdl-dialog">
+                                    <div class="mdl-dialog__content">
+                                        <p>
+                                            Allow this site to collect usage data to improve your experience?
+                                        </p>
+                                    </div>
+                                    <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+                                        <button type="button" class="mdl-button">Agree</button>
+                                        <button type="button" class="mdl-button close">Disagree</button>
+                                    </div>
+                                </dialog>
 
+                                <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+                                    <i class="material-icons">more_vert</i>
+                                </button>
+
+                                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
+                                    <li class="mdl-menu__item">Some Action</li>
+                                    <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+                                    <li disabled class="mdl-menu__item">Disabled Action</li>
+                                    <li class="mdl-menu__item">Yet Another Action</li>
+                                </ul>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
                                 <ul class="demo-list-three mdl-list">
                                     <li class="mdl-list__item mdl-list__item--three-line">
                                         <span class="mdl-list__item-primary-content">
@@ -171,15 +193,17 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mdl-cell mdl-cell--12-col">
-                                <aside class="">
+                            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet center-items">
+                                <div class="center-items">
                                     <!-- Contact Chip -->
                                     <span class="mdl-chip mdl-chip--contact">
                                         <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">A</span>
                                         <span class="mdl-chip__text">Contact Chip</span>
                                     </span>
                                     <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-                                </aside>
+
+                                    <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -189,38 +213,44 @@
             <div class="bottom-content">
                 <h4>Premium Material Design Lite</h4>
                 <p>Looking for something more? Try these hand picked premium themes!</p>
-                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-                    <div class="mdl-tabs__tab-bar">
-                        <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
-                        <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
-                        <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
-                    </div>
 
-                    <div class="mdl-tabs__panel is-active" id="starks-panel">
-                        <ul>
-                            <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="♥">account_box</div>
-                            <li>Eddard</li>
-                            <li>Catelyn</li>
-                            <li>Robb</li>
-                            <li>Sansa</li>
-                            <li>Brandon</li>
-                            <li>Arya</li>
-                            <li>Rickon</li>
-                        </ul>
-                    </div>
-                    <div class="mdl-tabs__panel" id="lannisters-panel">
-                        <ul>
-                            <li>Tywin</li>
-                            <li>Cersei</li>
-                            <li>Jamie</li>
-                            <li>Tyrion</li>
-                        </ul>
-                    </div>
-                    <div class="mdl-tabs__panel" id="targaryens-panel">
-                        <ul>
-                            <li>Viserys</li>
-                            <li>Daenerys</li>
-                        </ul>
+
+                <div class="mdl-grid center-items">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--12-col-tablet">
+                        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                            <div class="mdl-tabs__tab-bar">
+                                <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+                                <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+                                <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+                            </div>
+
+                            <div class="mdl-tabs__panel is-active" id="starks-panel">
+                                <ul>
+                                    <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="♥">account_box</div>
+                                    <li>Eddard</li>
+                                    <li>Catelyn</li>
+                                    <li>Robb</li>
+                                    <li>Sansa</li>
+                                    <li>Brandon</li>
+                                    <li>Arya</li>
+                                    <li>Rickon</li>
+                                </ul>
+                            </div>
+                            <div class="mdl-tabs__panel" id="lannisters-panel">
+                                <ul>
+                                    <li>Tywin</li>
+                                    <li>Cersei</li>
+                                    <li>Jamie</li>
+                                    <li>Tyrion</li>
+                                </ul>
+                            </div>
+                            <div class="mdl-tabs__panel" id="targaryens-panel">
+                                <ul>
+                                    <li>Viserys</li>
+                                    <li>Daenerys</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,26 +262,28 @@
                         <h3>Want more material design lite themes & templates?</h3>
                         <p>Subscribe to get updated when new Bootstrap related products arrive!</p>
 
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="sample1">
-                                <label class="mdl-textfield__label" for="sample1">Text...</label>
+                        <div class="inner">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="sample1">
+                                    <label class="mdl-textfield__label" for="sample1">Text...</label>
+                                </div>
+                            </form>
+                            <p>or get updates on Twitter</p>
+
+                            <div id="tt1" class="icon material-icons">add</div>
+                            <div class="mdl-tooltip" data-mdl-for="tt1">
+                                Follow
                             </div>
-                        </form>
-
-                        <p>or get updates on Twitter</p>
-
-                        <div id="tt1" class="icon material-icons">add</div>
-                        <div class="mdl-tooltip" data-mdl-for="tt1">
-                            Follow
                         </div>
+
+
                     </div>
 
                 </div>
             </div>
 
             <section class="mdl-grid bottom-content center-items" id="my-table">
-                <!-- <div class="mdl-layout-spacer"></div> -->
                 <div class="mdl-cell mdl-cell--8-col mdl-cell--12-col-tablet">
                     <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
                         <thead>
@@ -280,12 +312,43 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+                    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                        <tr>
+                            <td>checkbox-1</td>
+                            <td>checkbox-2</td>
+                            <td>Radio on</td>
+                            <td>Radio off</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                                    <span class="mdl-checkbox__label">Checkbox</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Checkbox</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                                    <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                                    <span class="mdl-radio__label">First</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                                    <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                                    <span class="mdl-radio__label">Second</span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
-
-
-
-
-
 
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
