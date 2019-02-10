@@ -1,0 +1,91 @@
+h1, h2, h3, h3, h4, h5, h6, p, ul {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.mdl-grid {
+    /* background: slateblue; */
+}
+.mdl-cell {
+    /* background-color: gold; */
+    padding: 15px;
+}
+
+
+/* .demo-layout-transparent {
+background: url('../img/pexels-photo-1070945.jpeg') center / cover;
+} */
+.demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+    your background is light. */
+    color: white;
+}
+
+.demo-card-wide.mdl-card {
+
+}
+
+#banner {
+    padding: 3rem 0;
+    /* background: url("../img/ninja.svg"), linear-gradient(45deg,#dd3d31 0%,#d22f23 100%); */
+    background: #eee;
+    background-size: cover;
+}
+
+
+.mdl-card__media {
+    margin: 0;
+}
+.mdl-card__media > img, .mdl-cell > img {
+    max-width: 100%;
+}
+.mdl-card__actions {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+
+.mdl-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom-content {
+    background: #eee;
+    padding: 3rem;
+}
+
+@media screen and (max-width: 760px) {
+    .bottom-content {
+        padding: 0;
+    }
+}
+
+.mdl-tabs {
+    background: #fff;
+}
+
+
+/* Responsive table */
+.mdl-data-table {
+    table-layout: fixed;
+    width: 100%;
+}
+#my-table td, th {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+.mdl-grid.center-items {
+    justify-content: center;
+}
